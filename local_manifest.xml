@@ -7,14 +7,19 @@
                 fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
 
         <!-- Remove some projects -->
+   <remove-project name="device/generic/opengl-transport" />
 	<remove-project name="platform_packages_apps_Camera2"/>
 	<remove-project name="android_hardware_qcom_display"/>
+
+        <!-- Sync any repo -->
         <project path="hardware/qcom-caf/sm8150/display" name="boedhack99/android_hardware_qcom_display" remote="dblenk9" revision="lineage-18.1-caf-sm8150" />
         <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="dblenk9" revision="lineage-18.1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="dblenk9" revision="master" />
 
         <!-- Sync trees -->
         <project path="device/xiaomi/mojito" name="boedhack99/device_xiaomi_mojito-PE" remote="dblenk9" revision="R" />
         <project path="kernel/xiaomi/mojito" name="venom-stark/kernel_xiaomi_mojito" remote="dblenk9" revision="R-lto" />
+        <project path="vendor/xiaomi-firmware" name="vendor_xiaomi-firmware" remote="dblenk99" revision="eleven" />
         <project path="vendor/xiaomi/mojito" name="vendor_xiaomi_mojito" remote="dblenk99" revision="eleven" />
         <project path="vendor/xiaomi/mojito-vendor" name="vendor_xiaomi_mojito-vendor" remote="dblenk99" revision="eleven" />
 
