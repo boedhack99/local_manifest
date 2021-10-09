@@ -2,6 +2,6 @@
 <manifest>
 
   <!-- bootctrl -->
-  <!-- <remove-project name="platform/hardware/qcom/bootctrl" /> -->
+  <remove-project name="platform/hardware/qcom/bootctrl" />
 
 </manifest>
