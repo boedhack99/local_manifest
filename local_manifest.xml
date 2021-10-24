@@ -9,15 +9,15 @@
 refs/heads/lineage-18.1" />
 
         <!-- Remove some projects -->
-   <remove-project name="android_vendor_arrow" />
+   <!-- <remove-project name="android_vendor_arrow" /> -->
 
         <!-- < vendor > -->
-        <project path="vendor/arrow" name="boedhack99/android_vendor_arrow" remote="dblenk9" revision="arrow-12.0" />
+        <!-- <project path="vendor/arrow" name="boedhack99/android_vendor_arrow" remote="dblenk9" revision="arrow-12.0" /> -->
 
         <!-- Sync trees -->
         <project path="device/xiaomi/mojito" name="boedhack/android_device_xiaomi_mojito" remote="dblenk9" revision="arrow-12.0" />
-        <project path="vendor/xiaomi/mojito" name="boedhack/vxm" remote="dblenk9" revision="main" />
-        <project path="kernel/xiaomi/mojito" name="venom-stark/kernel_xiaomi_mojito-1" remote="dblenk9" revision="R" />
+        <project path="vendor/xiaomi/mojito" name="boedhack/vendor_xiaomi_mojito" remote="dblenk9" revision="12" />
+        <project path="kernel/xiaomi/mojito" name="venom-stark/kernel_xiaomi_mojito-1" remote="dblenk9" revision="staging" />
         <!-- <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="bootctrl" revision="lineage-18.1-caf" /> -->
         <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bootctrl" revision="lineage-18.1" />
 
