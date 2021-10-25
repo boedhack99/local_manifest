@@ -6,15 +6,17 @@
         <remote name="bootctrl" 
                 fetch="https://github.com/LineageOS"
                 revision="refs/heads/lineage-18.1" />
+        <remote name="vxj" 
+                fetch="https://gitlab.com/boedhack99" />
 
         <!-- Sync some projects -->
         <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="dblenk9" revision="master" />
 
         <!-- Sync trees -->
-        <project path="device/xiaomi/mojito" name="boedhack/dxm" remote="dblenk9" revision="12" />
-        <project path="vendor/xiaomi/mojito" name="boedhack/vxm" remote="dblenk9" revision="main" />
-        <project path="kernel/xiaomi/mojito" name="venom-stark/kernel_xiaomi_mojito" remote="dblenk9" revision="R" />
-        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bootctrl" revision="lineage-18.1" />
+        <project path="device/xiaomi/juice" name="boedhack/device_xiaomi_juice" remote="dblenk9" revision="11-wip" />
+        <project path="vendor/xiaomi/juice" name="vendor-xiaomi-juice" remote="vxj" revision="11" />
+        <project path="kernel/xiaomi/juice" name="I-n-o-k/android_kernel_xiaomi_bengal" remote="dblenk9" revision="11.0" />
+        <!-- <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bootctrl" revision="lineage-18.1" /> -->
 
 </manifest>
 
