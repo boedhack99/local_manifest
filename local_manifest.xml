@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
+<?xml version="1.0" encoding="UTF-8"?> <manifest>
 
         <remote name="romgharti"
                 fetch="https://github.com" />
@@ -15,6 +14,7 @@
         <project path="kernel/xiaomi/mojito" name="venom-stark/kernel_xiaomi_mojito" remote="romgharti" revision="rebase" />
         <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="bootctrl" revision="lineage-19.0" />
         <project path="hardware/qcom-caf/bootctrl" name="romgharti/android_hardware_qcom_bootctrl" remote="romgharti" revision="lineage-19.0-caf" />
+        <project path="hardware/qcom/audio-caf/sm8150" name="romgharti/android_hardware_qcom_audio" remote="romgharti" revision="lineage-19.0-caf-sm8150" />
 </manifest>
                                                                                                                                       
 
