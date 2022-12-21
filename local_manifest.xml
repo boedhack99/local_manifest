@@ -22,7 +22,7 @@
         <!-- <project path="device/qcom/sepolicy_vndr-legacy-um" name="Evolution-X/device_qcom_sepolicy_vndr-legacy-um" remote="dblenk9" revision="tiramisu" /> -->
 
         <!-- qcom-sepolicy -->
-        <remove-project name="android_device_qcom_sepolicy" />
+        <!-- <remove-project name="android_device_qcom_sepolicy" /> -->
         <!-- <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-20.0" remote="dblenk9" /> -->
 
 </manifest>
