@@ -16,6 +16,9 @@
         <!-- Prebuilt Clang -->
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="scnprh" revision="master" clone-depth="1" />
 
+        <!-- Hardware Xiaomi -->
+        <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-20.0" remote="dblenk9" />
+
         <!-- qcom-sepolicy -->
         <remove-project name="android_device_qcom_sepolicy" />
         <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" revision="lineage-20.0" remote="dblenk9" />
