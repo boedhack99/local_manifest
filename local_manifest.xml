@@ -16,7 +16,7 @@
   <!-- <project path="kernel/xiaomi/sm6225-common" name="dblenk-project/kernel_xiaomi_sm6225-common_header" remote="dblenk9" revision="lineage-19.1" /> -->
 
   <!-- hardware xiaomi -->
-  <project path="hardware/xiaomi" name="dblenk-project/hardware_xiaomi" remote="dblenk9" revision="lineage-20" />
+  <project path="hardware/xiaomi" name="dblenk-project/hardware_xiaomi" remote="dblenk9" revision="lineage-20" clone-depth="1" />
 
   <!-- Extras -->
   <remove-project name="platform/frameworks/opt/net/ims"/>
