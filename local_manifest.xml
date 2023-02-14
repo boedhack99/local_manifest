@@ -6,14 +6,23 @@
         <remote name="scnprh"
                 fetch="https://gitlab.com" />
 
-  <!-- Sync trees -->
-  <project path="device/xiaomi/mojito" name="dblenk-project/device_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
-  <project path="vendor/xiaomi/mojito" name="dblenk-project/vendor_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
-  <project path="kernel/xiaomi/mojito" name="fiqri19102002/android_kernel_xiaomi_mojito" remote="dblenk9" revision="inline-rom" />
+  <!-- fog trees -->
+  <project path="device/xiaomi/fog" name="boedhack99/device_xiaomi_fog" remote="dblenk9" revision="lineage-20" />
+  <project path="vendor/xiaomi/fog" name="boedhack99/vendor_xiaomi_fog" remote="dblenk9" revision="13" />
 
-  <!-- <project path="device/xiaomi/sm6225-common" name="dblenk-project/device_xiaomi_sm6225-common" remote="dblenk9" revision="backup" /> -->
+  <!-- mojito trees
+  <project path="device/xiaomi/mojito" name="dblenk-project/device_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
+  <project path="vendor/xiaomi/mojito" name="dblenk-project/vendor_xiaomi_mojito" remote="dblenk9" revision="lineage-20" /> -->
+
+  <!-- sm6225-common
+  <project path="device/xiaomi/sm6225-common" name="dblenk-project/device_xiaomi_sm6225-common" remote="dblenk9" revision="backup" /> -->
   <!-- <project path="vendor/xiaomi/sm6225-common" name="dblenk-project/vendor_xiaomi_sm6225-common" remote="dblenk9" revision="lineage-20" /> -->
-  <!-- <project path="kernel/xiaomi/sm6225-common" name="dblenk-project/kernel_xiaomi_sm6225-common_header" remote="dblenk9" revision="lineage-19.1" /> -->
+
+  <!-- fog kernel headers -->
+  <project path="kernel/xiaomi/fog" name="dblenk-project/kernel_xiaomi_sm6225-common_header" remote="dblenk9" revision="lineage-19.1" />
+
+  <!-- mojito kernel
+  <project path="kernel/xiaomi/mojito" name="fiqri19102002/android_kernel_xiaomi_mojito" remote="dblenk9" revision="inline-rom" /> -->
 
   <!-- hardware xiaomi -->
   <project path="hardware/xiaomi" name="dblenk-project/hardware_xiaomi" remote="dblenk9" revision="lineage-20" clone-depth="1" />
