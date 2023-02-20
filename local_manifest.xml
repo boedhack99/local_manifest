@@ -8,7 +8,7 @@
 
   <!-- fog trees -->
   <project path="device/xiaomi/fog" name="boedhack99/device_xiaomi_fog" remote="dblenk9" revision="lineage-20" />
-  <project path="vendor/xiaomi/fog" name="boedhack99/vendor_xiaomi_fog" remote="dblenk9" revision="13" />
+  <project path="vendor/xiaomi/fog" name="boedhack99/vendor_xiaomi_fog" remote="dblenk9" revision="lineage-20" />
 
   <!-- mojito trees
   <project path="device/xiaomi/mojito" name="dblenk-project/device_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
