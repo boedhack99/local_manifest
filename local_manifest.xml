@@ -34,6 +34,10 @@
   <project path="frameworks/opt/telephony" name="crdroidandroid/android_frameworks_opt_telephony" remote="dblenk9" revision="13.0" clone-depth="1" /> -->
   <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm64" />
   <project path="external/chromium-webview/prebuilt/arm64" name="CatOS-Tiramisu/android_external_chromium-webview_prebuilt_arm64" remote="dblenk9" revision="main" clone-depth="1" />
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+  <project path="hardware/qcom-caf/wlan" name="Lafactorial/android_hardware_qcom_wlan" remote="dblenk9" revision="lineage-20.0-caf" clone-depth="1" />
+  <remove-project name="LineageOS/android_hardware_lineage_compat" />
+  <project path="hardware/lineage/compat" name="Lafactorial/android_hardware_lineage_compat" remote="dblenk9" revision="lineage-20.0" clone-depth="1" />
 
   <!-- Prebuilt Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="scnprh" revision="master" clone-depth="1" />
