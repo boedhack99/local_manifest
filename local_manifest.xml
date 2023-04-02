@@ -24,9 +24,9 @@
   <project path="hardware/xiaomi" name="dblenk-project/hardware_xiaomi" remote="dblenk9" revision="lineage-20" clone-depth="1" />
 
   <!-- < HALs > -->
-  <project path="hardware/qcom/display" name="PixelExperience/hardware_qcom-caf_bengal_display" remote="dblenk9" revision="thirteen" />
-  <project path="hardware/qcom/media" name="PixelExperience/hardware_qcom-caf_bengal_media" remote="dblenk9" revision="thirteen" />
-  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="PixelExperience/hardware_qcom-caf_bengal_audio" remote="dblenk9" revision="thirteen" />
+  <project path="hardware/qcom/display" name="D9-Dev/hardware_qcom-caf_bengal_display" remote="dblenk9" revision="thirteen" />
+  <project path="hardware/qcom/media" name="D9-Dev/hardware_qcom-caf_bengal_media" remote="dblenk9" revision="thirteen" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="D9-Dev/hardware_qcom-caf_bengal_audio" remote="dblenk9" revision="thirteen" />
   <project path="hardware/qcom/gps" name="PixelExperience/hardware_qcom-caf_bengal_gps" remote="dblenk9" revision="thirteen" />
 
   <!-- Prebuilt Clang -->
