@@ -6,33 +6,30 @@
         <remote name="scnprh"
                 fetch="https://gitlab.com" />
 
-  <remove-project name="AOSPA/android_vendor_aospa"/>
-  <project path="vendor/aospa" name="D9-Dev/android_vendor_aospa" remote="dblenk9" revision="topaz" />
+  <!-- vendor_aospa -->
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <project path="vendor/aospa" name="D9-Dev/android_vendor_aospa" remote="dblenk9" revision="topaz" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
 
-  <!-- fog trees
-  <project path="device/xiaomi/fog" name="dblenk-project/device_xiaomi_fog" remote="dblenk9" revision="tokui" />
-  <project path="vendor/xiaomi/fog" name="dblenk-project/vendor_xiaomi_fog" remote="dblenk9" revision="tokui" /> -->
+  <!-- build -->
+  <remove-project name="AOSPA/android_build" />
+  <project path="build/make" name="aospa-vince/android_build" remote="dblenk9" revision="topaz" >
+     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+     <linkfile src="core" dest="build/core" />
+     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+     <linkfile src="target" dest="build/target" />
+     <linkfile src="tools" dest="build/tools" />
+   </project>
 
   <!-- mojito trees
   <project path="device/xiaomi/mojito" name="dblenk-project/device_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
-  <project path="vendor/xiaomi/mojito" name="dblenk-project/vendor_xiaomi_mojito" remote="dblenk9" revision="lineage-20" /> -->
+  <project path="vendor/xiaomi/mojito" name="dblenk-project/vendor_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
+  <project path="kernel/xiaomi/mojito" name="D9-Dev/kernel_xiaomi_mojito" remote="dblenk9" revision="thirteen" /> -->
 
-  <!-- fog kernel
-  <project path="device/xiaomi/fog-kernel" name="dblenk-project/device_xiaomi_fog-kernel" remote="dblenk9" revision="13" /> -->
-
-  <!-- mojito kernel
-  <project path="kernel/xiaomi/mojito" name="fiqri19102002/android_kernel_xiaomi_mojito" remote="dblenk9" revision="inline-rom" /> -->
-
-  <!-- hardware xiaomi
-  <project path="hardware/xiaomi" name="dblenk-project/hardware_xiaomi" remote="dblenk9" revision="lineage-20" clone-depth="1" /> -->
-
-  <!-- < HALs >
-  <project path="hardware/qcom/display" name="D9-Dev/hardware_qcom-caf_bengal_display" remote="dblenk9" revision="thirteen" />
-  <project path="hardware/qcom/media" name="D9-Dev/hardware_qcom-caf_bengal_media" remote="dblenk9" revision="thirteen" />
-  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="D9-Dev/hardware_qcom-caf_bengal_audio" remote="dblenk9" revision="thirteen" />
-  <project path="hardware/qcom/gps" name="PixelExperience/hardware_qcom-caf_bengal_gps" remote="dblenk9" revision="thirteen" /> -->
-
-  <!-- Prebuilt Clang
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="scnprh" revision="master" clone-depth="1" /> -->
+  <!-- Prebuilt Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="anandhan07/aosp-clang" remote="scnprh" revision="17" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="anandhan07/aosp-clang" remote="scnprh" revision="14" clone-depth="1" />
 
 </manifest>
