@@ -6,14 +6,16 @@
         <remote name="scnprh"
                 fetch="https://gitlab.com" />
 
-  <!-- vendor_aospa -->
+  <!-- Override Some Project -->
+  <remove-project name="AOSPA/android_build" />
   <remove-project name="AOSPA/android_vendor_aospa" />
-  <project path="vendor/aospa" name="D9-Dev/android_vendor_aospa" remote="dblenk9" revision="topaz" >
-    <linkfile src="build.sh" dest="rom-build.sh" />
-  </project>
+
+  <!-- mojito trees -->
+  <project path="device/xiaomi/mojito" name="dblenk-project/device_xiaomi_mojito" remote="dblenk9" revision="topaz" />
+  <project path="vendor/xiaomi/mojito" name="dblenk-project/vendor_xiaomi_mojito" remote="dblenk9" revision="topaz" />
+  <project path="kernel/xiaomi/mojito" name="D9-Dev/kernel_xiaomi_mojito" remote="dblenk9" revision="thirteen" />
 
   <!-- build -->
-  <remove-project name="AOSPA/android_build" />
   <project path="build/make" name="aospa-vince/android_build" remote="dblenk9" revision="topaz" >
      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,10 +25,17 @@
      <linkfile src="tools" dest="build/tools" />
    </project>
 
-  <!-- mojito trees
-  <project path="device/xiaomi/mojito" name="dblenk-project/device_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
-  <project path="vendor/xiaomi/mojito" name="dblenk-project/vendor_xiaomi_mojito" remote="dblenk9" revision="lineage-20" />
-  <project path="kernel/xiaomi/mojito" name="D9-Dev/kernel_xiaomi_mojito" remote="dblenk9" revision="thirteen" /> -->
+  <!-- vendor_aospa -->
+  <project path="vendor/aospa" name="D9-Dev/android_vendor_aospa" remote="dblenk9" revision="topaz" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+
+  <!-- HALs -->
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="dblenk9" revision="topaz-855" />
+  <project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="dblenk9" revision="topaz-855" />
+  <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="dblenk9" revision="topaz-855" />
+  <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="dblenk9" revision="topaz-855" />
+  <project path="hardware/xioami" name="AOSPA/android_hardware_xiaomi" remote="dblenk9" revision="topaz" />
 
   <!-- Prebuilt Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="anandhan07/aosp-clang" remote="scnprh" revision="17" clone-depth="1" />
