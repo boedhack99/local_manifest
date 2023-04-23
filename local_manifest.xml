@@ -13,7 +13,7 @@
   <!-- mojito trees -->
   <project path="device/xiaomi/mojito" name="dblenk-project/device_xiaomi_mojito" remote="dblenk9" revision="topaz" />
   <project path="vendor/xiaomi/mojito" name="dblenk-project/vendor_xiaomi_mojito" remote="dblenk9" revision="topaz" />
-  <project path="kernel/xiaomi/mojito" name="D9-Dev/kernel_xiaomi_mojito" remote="dblenk9" revision="thirteen" />
+  <project path="kernel/xiaomi/mojito" name="Pa-mojito/kernel_xiaomi_mojito" remote="dblenk9" revision="topaz" />
 
   <!-- build -->
   <project path="build/make" name="aospa-vince/android_build" remote="dblenk9" revision="topaz" >
