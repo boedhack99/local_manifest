@@ -14,7 +14,7 @@
   <project path="kernel/xiaomi/sm6375" name="xiaomi-sm6375-devs/android_kernel_xiaomi_sm6375" remote="dblenk9" revision="lineage-20" />
 
   <!-- hardware xiaomi -->
-  <project path="hardware/xiaomi" name="Xiaomi-SM6375/hardware_xiaomi" remote="dblenk9" revision="lineage-20" />
+  <project path="hardware/xiaomi" name=xiaomi-sm6375-devs/android_hardware_xiaomi" remote="dblenk9" revision="lineage-20" />
 
   <!-- Prebuilt Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="anandhan07/aosp-clang" remote="scnprh" revision="17" clone-depth="1" />
