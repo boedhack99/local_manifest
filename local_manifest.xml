@@ -17,7 +17,6 @@
   <project path="hardware/xiaomi" name="xiaomi-sm6375-devs/android_hardware_xiaomi" remote="dblenk9" revision="lineage-20" />
 
   <!-- Prebuilt Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="anandhan07/aosp-clang" remote="scnprh" revision="17" clone-depth="1" />
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="anandhan07/aosp-clang" remote="scnprh" revision="14" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r487747" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="scnprh" revision="13.0" />
 
 </manifest>
